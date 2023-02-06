@@ -2,11 +2,12 @@ use image::{ImageBuffer, Rgb};
 use imageproc::drawing::draw_text_mut;
 use rusttype::{point, Font, Scale};
 
+#[derive(Clone, Copy)]
 pub struct Frames {
     pub countdown: u32,
     pub width: u32,
     pub height: u32,
-    frame: u32,
+    pub frame: u32,
 }
 
 impl Frames {
