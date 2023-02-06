@@ -1,0 +1,2 @@
+Avg of rust: 0.00323834
+Avg of node: 0.0031542

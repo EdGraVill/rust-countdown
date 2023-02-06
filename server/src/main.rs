@@ -18,7 +18,7 @@ fn index(
 ) -> Content<Stream<BufReader<ChildStdout>>> {
     let file_format = format.unwrap_or_else(|| "mp4".to_string());
 
-    let output = Command::new("/Users/edgravill/code/rust/countdown/target/debug/animation")
+    let output = Command::new("/Users/edgravill/code/rust/countdown/target/release/animation")
         .arg("-c")
         .arg(time.to_string())
         .arg("-w")
